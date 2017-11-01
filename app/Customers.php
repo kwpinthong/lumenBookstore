@@ -18,8 +18,14 @@ class Customers extends Model
         return $this->belongsTo('App\Persons');
     }
 
-    /*public function member()
+
+    public function membered()
     {
-        return $this->hasOne('App\Staffs');
-    }*/
+        return $this->hasMany('App\Stores');
+    }
+
+    public function buy()
+    {
+        return $this->hasMany('App\Sell_logs');
+    }
 }
