@@ -25,16 +25,16 @@ class Stocks extends Model
 
     public function sell()
     {
-        return $this->hasMany('App\Sell_logs')
+        return $this->hasMany('App\Sell_logs');
     }
 
     public function supply()
     {
-        return $this->hasMany('App\Supply_logs')
+        return $this->hasMany('App\Supply_logs');
     }
 
     public function stock()
     {
-        return $this->hasMany('App\Book_in_stock')
+        return $this->hasMany('App\Book_in_stock');
     }
 }

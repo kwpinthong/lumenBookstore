@@ -25,11 +25,11 @@ class Stores extends Model
 
     public function members()
     {
-        return $this->belongsTo('App\Customers')
+        return $this->belongsTo('App\Customers');
     }
 
     public function stock()
     {
-        return $this->hasOne('App\Stocks')
+        return $this->hasOne('App\Stocks');
     }
 }
